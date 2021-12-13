@@ -26,12 +26,15 @@ function weatherData(currWeatherURl){
         console.log(cName);
         var cTemp= data.main.temp;
         console.log(cTemp);
-        var cWind = data.wind;
+        var cWind = data.wind.speed;
         console.log(cWind);
-        var cWeather= data.weather;
+        var cWeather= data.weather[0].description;
         console.log(cWeather);
         //var ccityName=document.getElementById("cityName");
         document.getElementById("cityName").innerHTML = cName;
+        document.getElementById("temp").innerHTML = cTemp;
+        document.getElementById("wind").innerHTML = cWind;
+        document.getElementById("weather").innerHTML = cWeather;
     });
 };
 
