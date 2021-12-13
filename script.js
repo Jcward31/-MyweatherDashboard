@@ -4,7 +4,7 @@ var CitySrch = document.getElementById("Search");
 var weatherKey = "0b6b1584b248fb47b4145903c21533f1";
 
 CitySrch.addEventListener('click', event =>{
-    
+    event.preventDefault();
     var city =document.getElementById("SearchByCity").value;
     console.log(city);
     var currWeatherURl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherKey;
@@ -20,7 +20,11 @@ function weatherData(currWeatherURl){
     .then(function (response) {
         return response.json();
     })
+    .then(function (data) {
+        console.log(data);
+    });
 };
+
 
 
 
