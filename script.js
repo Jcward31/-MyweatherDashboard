@@ -30,6 +30,8 @@ function weatherData(currWeatherURl){
         console.log(cWind);
         var cWeather= data.weather;
         console.log(cWeather);
+        //var ccityName=document.getElementById("cityName");
+        document.getElementById("cityName").innerHTML = cName;
     });
 };
 

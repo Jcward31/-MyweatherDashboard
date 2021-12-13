@@ -6,6 +6,18 @@
     padding: 15px;
 }
 
+.crrntCast {
+
+    border-style: double;
+    border-color: blue;
+    text-align: center;
+    display: flex;
+    float: right;
+    height: 650px;
+    width: 650px;
+
+}
+
 .cast1 {
 
     border-style: double;
@@ -13,6 +25,8 @@
     text-align: center;
     display: flex;
     float: right;
+    height: 150px;
+    width:150px;
 }
 
 .cast2 {
