@@ -30,13 +30,37 @@ function weatherData(currWeatherURl){
         console.log(cWind);
         var cWeather= data.weather[0].description;
         console.log(cWeather);
+        var cHum= data.main.humidity;
+        console.log(cHum);
         //var ccityName=document.getElementById("cityName");
         document.getElementById("cityName").innerHTML = cName;
         document.getElementById("temp").innerHTML = cTemp;
         document.getElementById("wind").innerHTML = cWind;
         document.getElementById("weather").innerHTML = cWeather;
+        document.getElementById("humidity").innerHTML = cHum;
+
+        var lat= data.coord.lat;
+        var lon= data.coord.lon;
+
+
+       var fiveDay= "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&appid="+ weatherKey;
+
+       fetch(fiveDay)
+       .then(function (response) {
+   return response.json();
+ })
+   .then(function (data) {
+     console.log(data);
+     var uvI= data.current.uvi;
+     console.log(uvI);
+     document.getElementById("Uvi").innerHTML = uvI;
+
     });
-};
+
+
+
+});
+} 
 
 // when searching city name presented with city name, the date, weather condotions and UV index
 
