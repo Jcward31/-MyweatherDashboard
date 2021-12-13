@@ -9,18 +9,18 @@ CitySrch.addEventListener('click', event =>{
     console.log(city);
     var currWeatherURl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherKey;
  
-console.log(currWeatherURl);
 
-    $.ajax({
-        url:currWeatherURl,
-        method: "GET"
-    }).then(function(response){
-        console.log(response);
-    });
+    console.log(currWeatherURl);
 
+    weatherData(currWeatherURl);
 });
 
-
+function weatherData(currWeatherURl){
+    fetch(currWeatherURl)
+    .then(function (response) {
+        return response.json();
+    })
+};
 
 
 
@@ -28,4 +28,4 @@ console.log(currWeatherURl);
 
 // uv indez when clicked shows color that indicates  weather con favoriabilty favorable, moderate or severe
 
-// view future to see html for 5 day forcast 
+// view future to see html for 5 day forcast
