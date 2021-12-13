@@ -6,3 +6,47 @@
     padding: 15px;
 }
 
+.cast1 {
+
+    border-style: double;
+    border-color: rgb(4, 0, 255);
+    text-align: center;
+    display: flex;
+    float: right;
+}
+
+.cast2 {
+
+    border-style: double;
+    border-color: rgb(4, 0, 255);
+    text-align: center;
+    display: flex;
+    float: right;
+}
+
+.cast3 {
+
+    border-style: double;
+    border-color: rgb(4, 0, 255);
+    text-align: center;
+    display: flex;
+    float: right;
+}
+
+.cast4 {
+
+    border-style: double;
+    border-color: rgb(4, 0, 255);
+    text-align: center;
+    display: flex;
+    float: right;
+}
+
+.cast5 {
+
+    border-style: double;
+    border-color: rgb(4, 0, 255);
+    text-align: center;
+    display: flex;
+    float: right;
+}

@@ -22,13 +22,20 @@ function weatherData(currWeatherURl){
     })
     .then(function (data) {
         console.log(data);
+        var cName= data.name;
+        console.log(cName);
+        var cTemp= data.main.temp;
+        console.log(cTemp);
+        var cWind = data.wind;
+        console.log(cWind);
+        var cWeather= data.weather;
+        console.log(cWeather);
     });
 };
 
-
-
-
 // when searching city name presented with city name, the date, weather condotions and UV index
+
+
 
 // uv indez when clicked shows color that indicates  weather con favoriabilty favorable, moderate or severe
 
